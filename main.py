@@ -13,7 +13,7 @@ class Game:
         pygame.mixer.init()
         self.win_sound = pygame.mixer.Sound("assets/sounds/win.wav")
         self.lose_sound = pygame.mixer.Sound("assets/sounds/lose.wav")
-        self.click_sound = pygame.mixer.Sound("assets/sounds/click.wav")
+        self.meow_sound = pygame.mixer.Sound("assets/sounds/meow.wav")
 
         # Screen Setup
 
@@ -115,7 +115,7 @@ class Game:
             align="center",
             font=("Courier", 22, "bold"),
         )
-        self.click_sound.play()
+        self.meow_sound.play()
 
     def random_place(self):
         random_x = random.randint(-250, 250)
